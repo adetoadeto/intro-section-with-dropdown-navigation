@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div class="backdrop">
+  </div>
+  
+  <header>
+    <nav class="desktop-navbar">
+      <div class="first-half">
+        <!-- logo -->
+        <div class="logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+  
+        <ul class="lists">
+          <!-- features -->
+          <div class="features">
+
+            <!-- features-heading -->
+            <div class="dropdown-box-parent">
+              <li class="main">Features
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" class="features-dropdown-icon"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" class="__web-inspector-hide-shortcut__"/></svg>
+              </li>
+            </div>
+            
+            <!-- features contents -->
+            <div class="dropdown-box" id="features">
+              <ul>
+                <li>
+                  <img src="./images/icon-todo.svg" alt="todo icon">
+                  Todo List</li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="calender icon">
+                  Calender</li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="bell icon">
+                  Reminders</li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="clock icon">
+                  Planning</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- company -->
+          <div class="company">
+
+            <!-- company heading -->
+            <div class="dropdown-box-parent">
+              <li class="main">Company
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" class="company-dropdown-icon"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" class="__web-inspector-hide-shortcut__"/></svg>
+              </li>
+            </div>
+            
+            <!-- company contents -->
+            <div class="dropdown-box" id="company">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div> 
+          </div>
+          
+          <li class="main">Careers</li>
+          <li class="main">About</li>
+        </ul>
+      </div>
+
+      <!-- login and register -->
+      <div class="second-half">
+        <ul class="lists">
+          <li class="main">Login</li>
+          <button>Register</button>
+        </ul>
+      </div> 
+
+      <!-- mobile navbar icon -->
+      <div class="hamburger-icon">
+        <img src="./images/icon-menu.svg" alt="">
+      </div>
+    </nav>
+  </header>
+
+  <!-- mobile navbar -->
+  <nav id="mobile-navbar">
+    <img src="./images/icon-close-menu.svg" alt="" id="close">
+
+    <ul>
+      <!-- features container -->
+      <li>Features <img src="./images/icon-arrow-down.svg" alt="arrow-down-icon" class="features-dropdown-icon">
+        <ul class="dropdown__items" id="mobile-features" >
+          <li>
+            <img src="./images/icon-todo.svg" alt="todo icon">
+            Todo List</li>
+          <li>
+            <img src="./images/icon-calendar.svg" alt="calender icon">
+            Calender</li>
+          <li>
+            <img src="./images/icon-reminders.svg" alt="bell icon">
+            Reminders</li>
+          <li>
+            <img src="./images/icon-planning.svg" alt="clock icon">
+            Planning</li>
+        </ul>
+      </li>
+
+      <!-- company container -->
+      <li>Company <img src="./images/icon-arrow-down.svg" alt="arrow-down-icon" class="company-dropdown-icon">
+        <ul class="dropdown__items" id="mobile-company">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </li>
+
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+
+    <ul class="login-register">
+      <li>Login</li>
+      <button>Register</button>
+    </ul>
+  </nav>
+
+  <main class="hero-section">
+
+    <div class="make-remote-work">
+
+      <div class="texts">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button>Learn more</button>
+      </div>
+
+      <div class="brands">
+        <img src="./images/client-databiz.svg" alt="brand logo">
+        <img src="./images/client-audiophile.svg" alt="brand logo">
+        <img src="./images/client-meet.svg" alt="brand logo">
+        <img src="./images/client-maker.svg" alt="brand logo">
+      </div>
+    </div>
+    
+    <div class="image">
+      <img src="./images/image-hero-desktop.png" alt="" id="desktop">
+      <img src="./images/image-hero-mobile.png" alt=""id="mobile">
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oluwatomi</a>.
+  </footer>
+</body>
+</html>

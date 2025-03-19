@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --almost-white:  hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding:2rem 3rem;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--almost-white);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    color: var(--medium-gray);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    font: inherit;
+}
+svg{
+    vertical-align: middle;
+    margin-left: 0.3rem;
+} 
+/* -------------------------------------------------- */
+header {
+    height: 100px;
+}
+.desktop-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger-icon, #mobile-navbar {
+    display: none;
+}
+
+.desktop-navbar .lists {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dropdown-box-parent {
+    position: relative;
+}
+
+.dropdown-box {
+    background-color: white;
+    padding: 0.8rem 1.5rem ;
+    border-radius: 0.5rem;
+    line-height: 2.1;
+    position: absolute;
+    margin-top: 1.5rem;
+    box-shadow: 1px 1px 20px gainsboro;
+    display: none;
+}
+
+.dropdown-box img, 
+.mobile-navbar .dropdown__items img {
+    margin-right: 0.7rem;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;  
+    vertical-align: middle;
+}
+
+.dropdown-box.features {
+    width: 130px;
+    left: 95px;
+}
+.dropdown-box.company{
+    width: 90px;  
+}
+
+.desktop-navbar .first-half {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.desktop-navbar .first-half .logo img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.desktop-navbar .lists button {
+    padding: 0.7rem 1.2rem;
+    outline: none;
+    border: 1.8px solid var(--medium-gray);
+    color: inherit;
+    background-color: inherit;
+}
+
+.desktop-navbar .lists button:hover {
+    border-color: var(--almost-black);
+    color: var(--almost-black);
+}
+
+nav li.main:hover,
+button:hover,
+path:hover {
+    cursor: pointer;
+}
+
+nav li.main:hover,
+path:hover {
+    color: var(--almost-black); 
+    stroke: var(--almost-black);
+}
+
+
+/* Main-Hero section */
+main.hero-section {
+    height: auto;
+    display: flex;
+    margin-left: 7rem;
+    padding-bottom: 4rem; 
+}
+main.hero-section .make-remote-work {
+    width: 50%;
+    align-self: flex-end;
+}
+.hero-section .make-remote-work h1 {
+    font-weight: 700;
+    font-size:  5.2rem;
+    margin-right: 2rem;
+    color: var(--almost-black);
+}
+.hero-section .make-remote-work .texts p {
+    font-weight: 500;
+    margin: 2.5rem 10rem 2.5rem 0;
+    line-height: 1.5;
+}
+.hero-section .make-remote-work .texts button {
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    border: none;
+}
+
+.hero-section .make-remote-work .texts button:hover {
+    background-color: inherit;
+    color: var(--almost-black);
+    border: 1.8px solid var(--almost-black);
+}
+
+.hero-section .make-remote-work .brands img {
+    margin-top: 5.5rem;
+    margin-right: 2rem;
+}
+
+.hero-section .image {
+    width: 50%; 
+}
+.hero-section .image img {
+    margin-top: 2rem;
+    width: 100%;
+    object-fit: contain;
+    height: 600px; 
+}
+
+.hero-section .image #mobile {
+    display: none;
+}
+
+.show {
+    display: block !important; 
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1200px) {
+    body {
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 900px;    
+    }
+
+    .backdrop {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        padding: 0 1rem;
+        height: auto;
+    }
+    .desktop-navbar .lists {
+        display: none;
+    }
+    .desktop-navbar .logo img {
+        height: 2.5rem;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+    
+    .mobile-navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: var(--almost-white);
+        z-index: 101;
+        padding: 1.5rem;
+        text-align: end;
+    }
+    
+    .mobile-navbar ul {
+        margin-top: 1.5rem;
+        line-height: 2.5;
+        text-align: start;
+    }
+    .mobile-navbar ul img {
+        vertical-align: middle;
+        margin-left: 0.7rem;
+    }
+    .mobile-navbar .dropdown__items {
+        margin-top: 0;
+        margin-left: 1.5rem;
+        display: none;
+    }
+    .mobile-navbar .dropdown__items img {
+        margin-left: 0; 
+    }
+    .mobile-navbar ul.login-register {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .mobile-navbar button {
+        width: 100%;
+        line-height: 1;
+        outline: 0;
+        background-color: inherit;
+        border: 1.9px solid var(--medium-gray);
+        color: inherit;
+        margin-top: 0.5rem;
+    }
+
+   
+    main.hero-section {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        margin-left: 0;
+    }
+
+    .hero-section .image {
+        height: 50%;
+        width: 100%;
+    }
+    .hero-section .image #desktop {
+        display: none;
+    }
+    .hero-section .image #mobile {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    main.hero-section .make-remote-work {
+        width: 100%; 
+        text-align: center; 
+    }
+    .hero-section .make-remote-work h1 {
+        margin-right: 0;
+        font-size: 2.5rem;
+    }
+    .hero-section .make-remote-work .texts p {
+        margin: 2rem 1rem;
+    }
+    .hero-section .make-remote-work .brands img {
+        height: 15px;
+        margin-top: 3rem;
+    }
+    .hero-section .make-remote-work .brands img:last-child {
+        margin-right: 0;
+    }
+
+}
+
+
