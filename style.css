@@ -12,7 +12,7 @@
 
 body {
     margin: 0;
-    padding:2rem 3rem;
+    padding:2rem 2.5rem;
     height: 100vh;
     width: 100%;
     background-color: var(--almost-white);
@@ -66,7 +66,7 @@ header {
     border-radius: 0.5rem;
     line-height: 2.1;
     position: absolute;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     box-shadow: 1px 1px 20px gainsboro;
     display: none;
 }
@@ -80,12 +80,12 @@ header {
     vertical-align: middle;
 }
 
-.dropdown-box.features {
+.dropdown-box#features {
     width: 130px;
-    left: 95px;
+    left: 100px;
 }
-.dropdown-box.company{
-    width: 90px;  
+.dropdown-box#company{
+    width: 85px;  
 }
 
 .desktop-navbar .first-half {
@@ -130,20 +130,20 @@ main.hero-section {
     display: flex;
     margin-left: 7rem;
     padding-bottom: 4rem; 
+    gap: 5rem;
 }
 main.hero-section .make-remote-work {
-    width: 50%;
+    width: 50vw;
     align-self: flex-end;
 }
 .hero-section .make-remote-work h1 {
     font-weight: 700;
-    font-size:  5.2rem;
-    margin-right: 2rem;
+    font-size:  5rem;
     color: var(--almost-black);
 }
 .hero-section .make-remote-work .texts p {
     font-weight: 500;
-    margin: 2.5rem 10rem 2.5rem 0;
+    margin: 2.5rem 8rem 2.5rem 0;
     line-height: 1.5;
 }
 .hero-section .make-remote-work .texts button {
@@ -164,7 +164,8 @@ main.hero-section .make-remote-work {
 }
 
 .hero-section .image {
-    width: 50%; 
+    height: 100%;
+    width: 50vw; 
 }
 .hero-section .image img {
     margin-top: 2rem;
@@ -185,12 +186,12 @@ main.hero-section .make-remote-work {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
     body {
         margin: auto;
         padding-left: 0;
         padding-right: 0;
-        max-width: 900px;    
+          
     }
 
     .backdrop {
@@ -219,7 +220,7 @@ main.hero-section .make-remote-work {
         display: block;
     }
     
-    .mobile-navbar {
+    #mobile-navbar {
         position: fixed;
         top: 0;
         right: 0;
@@ -231,28 +232,28 @@ main.hero-section .make-remote-work {
         text-align: end;
     }
     
-    .mobile-navbar ul {
+    #mobile-navbar ul {
         margin-top: 1.5rem;
         line-height: 2.5;
         text-align: start;
     }
-    .mobile-navbar ul img {
+    #mobile-navbar ul img {
         vertical-align: middle;
         margin-left: 0.7rem;
     }
-    .mobile-navbar .dropdown__items {
+    #mobile-navbar .dropdown__items {
         margin-top: 0;
         margin-left: 1.5rem;
         display: none;
     }
-    .mobile-navbar .dropdown__items img {
+    #mobile-navbar .dropdown__items img {
         margin-left: 0; 
     }
-    .mobile-navbar ul.login-register {
+    #mobile-navbar ul.login-register {
         text-align: center;
         margin-top: 2rem;
     }
-    .mobile-navbar button {
+    #mobile-navbar button {
         width: 100%;
         line-height: 1;
         outline: 0;
