@@ -186,7 +186,7 @@ main.hero-section .make-remote-work {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
     body {
         background-color: red;
         margin: auto;
